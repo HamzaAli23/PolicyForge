@@ -1,0 +1,14 @@
+{
+  "environment": "examples/campus-navigation.env",
+  "seed": 2026,
+  "trainingEpisodes": 6000,
+  "evaluationEpisodes": 2000,
+  "maxSteps": 200,
+  "evaluationWorkers": 4,
+  "discountFactor": 0.9500,
+  "learningRate": 0.1600,
+  "valueIterationIterations": 61,
+  "policyAgreementPercent": 91.1765,
+  "optimalPolicy": {"successRatePercent": 88.3000, "averageReturn": 3.6930, "averageSteps": 13.9800},
+  "learnedPolicy": {"successRatePercent": 97.7000, "averageReturn": 2.9429, "averageSteps": 23.0890}
+}

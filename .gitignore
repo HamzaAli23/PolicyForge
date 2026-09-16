@@ -1,0 +1,9 @@
+build/
+runs/
+.cache/
+.idea/
+.vscode/
+*.exe
+*.o
+*.obj
+*.pdb

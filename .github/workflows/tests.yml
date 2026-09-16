@@ -1,0 +1,23 @@
+name: C++ validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Build and run tests
+        run: make test
+      - name: Build application
+        run: make all
+      - name: Run reproducible experiment
+        run: ./build/policyforge --environment examples/campus-navigation.env --output runs/ci --episodes 1000 --evaluation-episodes 200 --workers 2 --seed 2026
+      - name: Verify report artifacts
+        run: test -s runs/ci/report.html && test -s runs/ci/summary.json && test -s runs/ci/training.csv
