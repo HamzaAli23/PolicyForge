@@ -143,7 +143,3 @@ docs/                   architecture notes and verified artifacts
 - The bundled scenario validates implementation behaviour; it is not a benchmark for a physical navigation system.
 - Policy agreement can understate similarity when several actions have nearly equal value.
 - Results from a single seed should not be treated as a general performance claim.
-
-## License
-
-Released under the [MIT License](LICENSE).
