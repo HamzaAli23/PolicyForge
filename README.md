@@ -7,7 +7,6 @@ PolicyForge is a C++20 reinforcement-learning laboratory for comparing model-bas
 ![PolicyForge reinforcement-learning experiment report](docs/screenshots/experiment-report.png)
 
 
-
 ## Why this project
 
 The project focuses on the engineering behind trustworthy reinforcement-learning experiments:
